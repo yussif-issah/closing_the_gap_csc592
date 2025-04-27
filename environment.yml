@@ -1,0 +1,34 @@
+name: query_based_framework
+channels:
+  - nvidia
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy=1.23.3
+  - scipy=1.9.3
+  - matplotlib=3.5.3
+  - pandas
+  - pillow=9.2.0
+  - tqdm
+  - pytorch=1.13.0
+  - torchvision=0.14.0
+  - torchaudio=0.13.0
+  - pytorch-cuda=11.7  # this replaces cudatoolkit
+  - ffmpeg
+  - pip:
+      - chardet==4.0.0
+      - filelock==3.12.2
+      - fsspec==2023.6.0
+      - geotorch==0.3.0
+      - huggingface-hub==0.16.4
+      - idna==2.10
+      - jinja2==3.1.2
+      - markupsafe==2.1.3
+      - pytz==2023.3
+      - pyyaml==6.0.1
+      - requests==2.25.1
+      - git+https://github.com/RobustBench/robustbench.git@37bdaf46628bf66658e40bf88a46fe9bd48b8e98#egg=robustbench
+      - timm==0.6.13
+      - torchdiffeq==0.2.3
