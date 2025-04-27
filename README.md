@@ -86,6 +86,17 @@ optional arguments:
 ```
 Also You will have to download the datasets for the attack ILSVRC2012_img_val.tar and ILSVRC2012_devkit_t12.tar.gz from these links
 [link](https://drive.google.com/file/d/1fAWbssA2Ti9W1wjDVY3ETf8KP5-xYV3e/view?usp=sharing), [link](https://drive.google.com/file/d/1Qr4ANOjiexFCnQjozezVaCb2eKj4Qldj/view?usp=sharing) respectively.
+
+### Example of launching an experiment 
+python runall.py --attack popskipjump --output_folder newoutput
+
+### Launching a single experimental attack 
+python main.py -a surfree -n 200 -d imagenet --seed 2023 --arch resnet50 -t 1.0 -D jpeg --noise_level 85 -o output/surfree/imagenet/resnet50/jpeg/noise_85_threshold_1.0 -eps 21.0 -q 40000 -tid 0 -m attack
+### Running the Younden Index 
+python youdenIndex.py -a surfree -n 200 -d imagenet --seed 2023 --arch resnet50 -t 1.0 -D jpeg --noise_level 85 -o output/surfree/imagenet/resnet50/jpeg/noise_85_threshold_1.0 -eps 21.0 -q 40000 -tid 0 -m attack. 
+
+The results will be a plot of Youden Index against thresholds and also a print to the screen of the optimal threshold based on the best Younden index
+
 ### Results
 
 The used models can be downloaded [here](https://ruhr-uni-bochum.sciebo.de/s/R6FGr39LZaqHRPn) and need to be unpacked into the ```models``` folder in the root directory.
