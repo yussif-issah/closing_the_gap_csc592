@@ -120,7 +120,3 @@ Then the main results in form of Pareto plots can be generated with the script `
     pages={21859-21868} 
 }
 ```
-
-## Contact
-
-Feel free to contact the first author via the e-mail provided on the publication.
